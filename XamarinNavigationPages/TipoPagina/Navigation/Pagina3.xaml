@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinNavigationPages.TipoPagina.Navigation.Pagina3"
+             Title="Título da Página 3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Pagina 3"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Voltar TUDO" />
+            <Button Text="Voltar TUDO" Clicked="VoltarTudo" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

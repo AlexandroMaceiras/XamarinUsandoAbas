@@ -7,11 +7,15 @@
              x:Class="XamarinNavigationPages.TipoPagina.Navigation.Modal">
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightSkyBlue">
-            <StackLayout HeightRequest="50" BackgroundColor="LightBlue">
-                <Label Text="Título do Modal" />
+            <StackLayout HeightRequest="90" BackgroundColor="LightBlue">
+                <Label Text="Label do StackLayout - Fechar" />
                 <Button Text="Fechar Modal" Clicked="FecharModal" />
             </StackLayout>
-
+            
+            <StackLayout  HeightRequest="90" BackgroundColor="GreenYellow">
+                <Label Text="Label do StackLayout - Menu" />
+                <Button Text="Menu" Clicked="Menu" />
+            </StackLayout>
             <Label Text="Modal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

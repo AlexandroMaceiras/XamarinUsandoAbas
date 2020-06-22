@@ -21,5 +21,10 @@ namespace XamarinNavigationPages.TipoPagina.Navigation
         {
             Navigation.PopModalAsync(); //Este FecharModal é necessário senão vc fica travado no Modal ou então chama um outro Modal ou outro carousel através de outro evento.
         }
+        private void Menu(object o, EventArgs e)
+        {
+            Navigation.PopModalAsync();
+            App.Current.MainPage = new XamarinNavigationPages.Inicio.PaginaInicial();
+        }
     }
 }

@@ -19,8 +19,15 @@ namespace XamarinNavigationPages.TipoPagina.Navigation
 
         private void VoltarTudo(object o, EventArgs e)
         {
-            Navigation.PopToRootAsync();
-            Title = "Root da 3"; //Não funciona
+            try
+            {
+                Navigation.PopToRootAsync();
+                Title = "Root da 3"; //Só funciona na hora que misturar tudo
+            }
+            catch(Exception err)
+            {
+                DisplayAlert("Erro", err.Message, "[OK]");
+            }
         }
     }
 }

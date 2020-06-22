@@ -18,14 +18,26 @@ namespace XamarinNavigationPages.TipoPagina.Navigation
         }
         private void MudarPagina2(object o, EventArgs e)
         {
-            Title = "Voltou da 2";
-            //App.Current.MainPage = new XamarinNavigationPages.TipoPagina.Navigation.Pagina2(); //Esse não mantem o histórico de quem chamou ela.
-            Navigation.PushAsync(new Pagina2()); //Esse MANTEM o histórico de quem chamou ela.
+            try
+            {
+                Title = "Voltou da 2";
+                //App.Current.MainPage = new XamarinNavigationPages.TipoPagina.Navigation.Pagina2(); //Esse não mantem o histórico de quem chamou ela.
+                Navigation.PushAsync(new Pagina2()); //Esse MANTEM o histórico de quem chamou ela.
+            }
+            catch(Exception err)
+            {
+                DisplayAlert("Erro", err.Message, "[OK]");
+            }
         }
 
         public void ChamarModal(object o, EventArgs e)
         {
             Navigation.PushModalAsync(new Modal());
+        }
+
+        private void Menu(object o, EventArgs e)
+        {
+            App.Current.MainPage = new XamarinNavigationPages.Inicio.PaginaInicial();
         }
     }
 }

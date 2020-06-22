@@ -8,11 +8,11 @@
              Title="Título da Página 3">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Pagina 3"
+            <Label Text="Pagina 3 (Carousel)"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Label Text="Voltar TUDO" />
+            <Label Text="Voltar TUDO (Carousel)" />
             <Button Text="Voltar TUDO" Clicked="VoltarTudo" />
         </StackLayout>
     </ContentPage.Content>

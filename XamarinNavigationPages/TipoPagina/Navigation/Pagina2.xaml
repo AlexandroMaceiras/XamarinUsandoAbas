@@ -11,8 +11,8 @@
             <Label Text="Pagina 2"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Ir para pagina 3" Clicked="MudarPagina3"/>
-            <Label Text="Voltar TUDO" />
+            <Button Text="Ir para pagina 3 (Carousel)" Clicked="MudarPagina3"/>
+            <Label Text="Voltar TUDO (Carousel)" />
             <Button Text="Voltar TUDO" Clicked="VoltarTudo" />
         </StackLayout>
     </ContentPage.Content>
